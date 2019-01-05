@@ -1,12 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import renderLoader from './core/renderLoader'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+renderLoader().then(({ render, remove }) => {
+  render();
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+  import(/* webpackChunkName: "core" */ "./core/renderReact")
+    .then(({ renderReact }) => new Promise(resolve => {
+      setTimeout(_ => {
+        renderReact()
+        resolve()
+      }, 5000)
+    }))
+    .then(() => remove());
+});
+
+serviceWorker.register();
+
+
