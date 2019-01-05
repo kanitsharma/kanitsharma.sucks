@@ -8,7 +8,13 @@ export default () =>
     const render = () => {
       node.innerHTML = Loader;
     };
-    const remove = () => document.body.removeChild(node);
+    const remove = () => {
+      document.getElementsByClassName('page-content')[0].classList.add('loader-animate')
+      document.getElementsByClassName('page-deco')[0].classList.add('loader-animate')
+      setTimeout(_ => {
+        document.body.removeChild(node)
+      }, 500)
+    }
 
     resolve({ render, remove });
   });
