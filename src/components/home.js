@@ -1,3 +1,10 @@
 import React from 'react'
+import { useStore } from '../core/renderReact'
 
-export default props => <div>Loaded</div>
+export default props => {
+  const [state, dispatch] = useStore()
+
+  return (
+    <div>{state.counter}</div>
+  )
+}
