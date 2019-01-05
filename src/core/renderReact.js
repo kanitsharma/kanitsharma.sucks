@@ -6,17 +6,29 @@ import rootReducer from '../store/rootReducer'
 
 const { Provider, useStore } = createStore(rootReducer)
 
-const Node = (
+const Node = ({ Root }) => (
   <Provider>
-    <Home />
+    <Root />
   </Provider>
 )
 
 export const renderReact = () => {
   ReactDOM.render(
-    Node,
+    <Node Root={Home} />,
     document.getElementById('root')
   );
+}
+
+if (module.hot) {
+  module.hot.accept("../pages/home", () => {
+    import('../pages/home').then(module => {
+      const App = module.default
+      ReactDOM.render(
+        <Node Root={<App />} />,
+        document.getElementById('root')
+      );
+    })
+  });
 }
 
 export { useStore } 

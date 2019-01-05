@@ -12,12 +12,6 @@ html, body, #root {
   height: 100%;
 }
 
-.home {
-  background-color: #000;
-  color: #fff;
-  height: 100%;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
