@@ -117,7 +117,7 @@
       "react-app"
     ]
   },
-  "homepage": "http://kanitsharma.github.io/",
+  "homepage": "http://kanitsharma.github.io/kanitsharma.sucks",
   "devDependencies": {
     "gh-pages": "^2.0.1",
     "webpack-bundle-analyzer": "^3.0.3"
