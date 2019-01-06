@@ -1,15 +1,15 @@
 {
-  "main.css": "/static/css/main.ca57047a.chunk.css",
-  "main.js": "/static/js/main.dc05d019.chunk.js",
-  "main.js.map": "/static/js/main.dc05d019.chunk.js.map",
-  "core.js": "/static/js/core.dc3c533c.chunk.js",
-  "core.js.map": "/static/js/core.dc3c533c.chunk.js.map",
-  "static/js/2.7f539d9f.chunk.js": "/static/js/2.7f539d9f.chunk.js",
-  "static/js/2.7f539d9f.chunk.js.map": "/static/js/2.7f539d9f.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.ec298ae1.js",
-  "runtime~main.js.map": "/static/js/runtime~main.ec298ae1.js.map",
-  "static/css/main.ca57047a.chunk.css.map": "/static/css/main.ca57047a.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.3acf156cd56c5653ba451c3f4cdda209.js": "/precache-manifest.3acf156cd56c5653ba451c3f4cdda209.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/kanitsharma.sucks/static/css/main.ca57047a.chunk.css",
+  "main.js": "/kanitsharma.sucks/static/js/main.8f5fc461.chunk.js",
+  "main.js.map": "/kanitsharma.sucks/static/js/main.8f5fc461.chunk.js.map",
+  "core.js": "/kanitsharma.sucks/static/js/core.dc3c533c.chunk.js",
+  "core.js.map": "/kanitsharma.sucks/static/js/core.dc3c533c.chunk.js.map",
+  "static/js/2.43e419ab.chunk.js": "/kanitsharma.sucks/static/js/2.43e419ab.chunk.js",
+  "static/js/2.43e419ab.chunk.js.map": "/kanitsharma.sucks/static/js/2.43e419ab.chunk.js.map",
+  "runtime~main.js": "/kanitsharma.sucks/static/js/runtime~main.2db727af.js",
+  "runtime~main.js.map": "/kanitsharma.sucks/static/js/runtime~main.2db727af.js.map",
+  "static/css/main.ca57047a.chunk.css.map": "/kanitsharma.sucks/static/css/main.ca57047a.chunk.css.map",
+  "index.html": "/kanitsharma.sucks/index.html",
+  "precache-manifest.69d5d94bab41f24d1a5661e3f6cc8a14.js": "/kanitsharma.sucks/precache-manifest.69d5d94bab41f24d1a5661e3f6cc8a14.js",
+  "service-worker.js": "/kanitsharma.sucks/service-worker.js"
 }
