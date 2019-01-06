@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/kanitsharma.sucks/precache-manifest.69d5d94bab41f24d1a5661e3f6cc8a14.js"
+  "/kanitsharma.sucks/precache-manifest.e5d25cb77f125ae4f58ee38192cacfdb.js"
 );
 
 workbox.clientsClaim();

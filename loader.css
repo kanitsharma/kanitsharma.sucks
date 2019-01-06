@@ -22,21 +22,6 @@
 	overflow: hidden;
 }
 
-.loader-animate {
-	animation: fadeLeft 1000ms linear 4500ms;
-}
-
-@keyframes fadeLeft {
-	0% {}
-	50% {
-		transform: translateX(-400px);
-		opacity: 0;
-	}
-	100% {
-		
-	}
-}
-
 .page-deco {
 	position: relative;
 	z-index: 2;
