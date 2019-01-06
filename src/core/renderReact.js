@@ -24,7 +24,7 @@ if (module.hot) {
     import('../pages/home').then(module => {
       const App = module.default
       ReactDOM.render(
-        <Node Root={<App />} />,
+        <Node Root={App} />,
         document.getElementById('root')
       );
     })

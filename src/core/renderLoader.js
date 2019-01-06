@@ -7,14 +7,10 @@ export default () =>
     const node = getNode();
     const render = () => {
       node.innerHTML = Loader;
-    };
-    const remove = () => {
       document.getElementsByClassName('page-content')[0].classList.add('loader-animate')
       document.getElementsByClassName('page-deco')[0].classList.add('loader-animate')
-      setTimeout(_ => {
-        document.body.removeChild(node)
-      }, 500)
-    }
+    };
+    const remove = () => document.body.removeChild(node)
 
     resolve({ render, remove });
   });

@@ -1,5 +1,3 @@
-import './loader.css'
-
 export const Loader = `
 <div class="page">
 <div class="page-content">

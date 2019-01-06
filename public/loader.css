@@ -23,9 +23,15 @@
 }
 
 .loader-animate {
-	transition: all 0.5s linear;
-	transform: translateX(-200px);
-	opacity: 0;
+	animation: fadeLeft 1000ms linear 4500ms;
+}
+
+@keyframes fadeLeft {
+	from {}
+	to {
+		transform: translateX(-400px);
+		opacity: 0;
+	}
 }
 
 .page-deco {
