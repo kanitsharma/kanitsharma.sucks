@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/kanitsharma.sucks/static/js/runtime~main.7aa6399b.js"
   },
   {
-    "revision": "ce7427fc3631669f38ef",
-    "url": "/kanitsharma.sucks/static/js/main.ce7427fc.chunk.js"
+    "revision": "95f216e3a2a31983a0e5",
+    "url": "/kanitsharma.sucks/static/js/main.95f216e3.chunk.js"
   },
   {
     "revision": "5dda2deca87fa856a6c2",
@@ -16,11 +16,11 @@ self.__precacheManifest = [
     "url": "/kanitsharma.sucks/static/js/2.55339486.chunk.js"
   },
   {
-    "revision": "ce7427fc3631669f38ef",
+    "revision": "95f216e3a2a31983a0e5",
     "url": "/kanitsharma.sucks/static/css/main.45d99e0b.chunk.css"
   },
   {
-    "revision": "c8e3553d5d4f5ebf5c08cf3eb4364b5d",
+    "revision": "94ead25a94e8970386d742decafb9281",
     "url": "/kanitsharma.sucks/index.html"
   }
 ];
