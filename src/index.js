@@ -10,7 +10,7 @@ renderLoader().then(({ render, remove }) => {
       setTimeout(_ => {
         renderReact()
         resolve()
-      }, 0)
+      }, 4500)
     }))
     .then(() => remove());
 });

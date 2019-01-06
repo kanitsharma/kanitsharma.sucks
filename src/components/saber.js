@@ -18,7 +18,7 @@ const SaberContainer = styled.div`
 const Saber1 = styled.div`
   position: absolute;
   right: 0px;
-  transform: rotate(60deg);
+  transform: rotate(65deg);
   top: 40%;
   height: 20px;
   width: 700px;
@@ -40,7 +40,7 @@ const Saber2 = styled.div`
   box-shadow: inset 0 0 5px #ffe6e5, 0 0 20px ${props => props.color}, 0 0 30px ${props => props.color}, 0 0 20px ${props => props.color}, 0 0 50px ${props => props.color};
 `
 
-export default ({ theme }) => <SaberContainer>
+export default ({ theme, style }) => <SaberContainer style={style}>
   <Saber1 color={theme === 'light' ? '#3232ff' : '#e9032c'} />
   <Saber2 color={theme === 'light' ? '#3232ff' : '#e9032c'} />
 </SaberContainer>

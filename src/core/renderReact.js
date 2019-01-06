@@ -1,34 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from '../pages/home'
-import createStore from '../store'
-import rootReducer from '../store/rootReducer'
-
-const { Provider, useStore } = createStore(rootReducer)
-
-const Node = ({ Root }) => (
-  <Provider>
-    <Root />
-  </Provider>
-)
+import Root from './index'
 
 export const renderReact = () => {
   ReactDOM.render(
-    <Node Root={Home} />,
+    <Root />,
     document.getElementById('root')
   );
 }
 
 if (module.hot) {
   module.hot.accept("../pages/home", () => {
-    import('../pages/home').then(module => {
-      const App = module.default
+    import('./index').then(module => {
+      const Root = module.default
       ReactDOM.render(
-        <Node Root={App} />,
+        <Root />,
         document.getElementById('root')
       );
     })
   });
 }
-
-export { useStore } 

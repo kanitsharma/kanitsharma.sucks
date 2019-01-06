@@ -5,6 +5,7 @@
   "dependencies": {
     "@babel/core": "7.1.6",
     "@elementary/components": "^0.5.2",
+    "@reach/router": "^1.2.1",
     "@svgr/webpack": "2.4.1",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
@@ -45,7 +46,7 @@
     "react-dev-utils": "^7.0.1",
     "react-dom": "^16.7.0-alpha.2",
     "react-icons": "^3.2.2",
-    "react-pose": "^4.0.4",
+    "react-spring": "^7.2.8",
     "resolve": "1.8.1",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.0",
