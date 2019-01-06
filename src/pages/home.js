@@ -38,7 +38,7 @@ const A = styled.a`
 `
 
 const Header = ({ theme, dispatch }) => (
-  <Fixed width='100%' backgroundColor={theme === 'light' ? '#fff' : '#000'}>
+  <Fixed width='100%' backgroundColor='transparent'>
     <Flex justifyContent='flex-end' >
       <FadeUp delay={500} >
         <LightDarkButton color={theme === 'dark' ? '#fff' : '#000'} fontSize='30px' padding='10px' onClick={_ => dispatch({ type: 'TOGGLE_SIDE' })} >Turn to {chooseSide(theme)} Side !</LightDarkButton>

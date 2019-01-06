@@ -5,6 +5,14 @@ const SaberContainer = styled.div`
   position: relative;
   width: 200px;
   height: 500px;
+
+  @media (max-width: 1500px) {
+    transform: scale(0.8) translateX(100px);
+  }
+
+  @media (max-width: 1350px) {
+    transform: scale(0.6) translateX(200px);
+  }
 `
 
 const Saber1 = styled.div`
