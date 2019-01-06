@@ -27,10 +27,13 @@
 }
 
 @keyframes fadeLeft {
-	from {}
-	to {
+	0% {}
+	50% {
 		transform: translateX(-400px);
 		opacity: 0;
+	}
+	100% {
+		
 	}
 }
 

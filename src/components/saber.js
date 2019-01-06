@@ -33,6 +33,6 @@ const Saber2 = styled.div`
 `
 
 export default ({ theme }) => <SaberContainer>
-  <Saber1 color={theme === 'light' ? '#00be00' : '#e5020b'} />
-  <Saber2 color={theme === 'light' ? '#00be00' : '#e5020b'} />
+  <Saber1 color={theme === 'light' ? '#3232ff' : '#e9032c'} />
+  <Saber2 color={theme === 'light' ? '#3232ff' : '#e9032c'} />
 </SaberContainer>
