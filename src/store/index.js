@@ -4,13 +4,13 @@ export default function createStore(reducer) {
   const initState = reducer()
   const Store = createContext(initState)
 
-  const tools = window.__REDUX_DEVTOOLS_EXTENSION__.connect()
-  tools.init(initState)
+  const tools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__.connect()
+  tools && tools.init(initState)
 
   const Provider = ({ children }) => {
     const [state, dispatch] = useReducer(reducer, initState)
     const devtoolsDispatch = action => {
-      tools.send(action, state)
+      tools && tools.send(action, state)
       dispatch(action)
     }
 
