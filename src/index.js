@@ -1,18 +1,15 @@
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import renderLoader from './core/renderLoader'
+import { renderReact } from "./core/renderReact";
 
 renderLoader().then(({ render, remove }) => {
   render();
 
-  import(/* webpackChunkName: "core" */ "./core/renderReact")
-    .then(({ renderReact }) => new Promise(resolve => {
-      setTimeout(_ => {
-        renderReact()
-        resolve()
-      }, 4500)
-    }))
-    .then(() => remove());
+  setTimeout(_ => {
+    renderReact()
+    remove()
+  }, 4500)
 });
 
 serviceWorker.register();
