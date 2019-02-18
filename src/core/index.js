@@ -10,27 +10,16 @@ const { Provider, useStore } = createStore(rootReducer)
 
 export default _ => (
   <Provider>
-    <Location>
+    <Transition
+      from={{ opacity: 0, transform: 'translate3d(100%,0,0)' }}
+      enter={{ opacity: 1, transform: 'translate3d(0%,0,0)' }}
+      leave={{ opacity: 1, transform: 'translate3d(-50%,0,0)' }}>
       {
-        ({ location }) => (
-          <Transition
-            keys={location.key}
-            items={location}
-            from={{ opacity: 0, transform: 'translate3d(100%,0,0)' }}
-            enter={{ opacity: 1, transform: 'translate3d(0%,0,0)' }}
-            leave={{ opacity: 1, transform: 'translate3d(-50%,0,0)' }}>
-            {
-              l => style => (
-                <Router location={l} className='router' >
-                  <Home path='/' />
-                  {/* <About path='/about' style={style} /> */}
-                </Router>
-              )
-            }
-          </Transition>
+        l => style => (
+            <Home />
         )
       }
-    </Location>
+    </Transition>
   </Provider>
 )
 
